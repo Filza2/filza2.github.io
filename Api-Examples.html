@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/jpg" href="images/Tweakpy-logo.jpg">
+  <link rel="stylesheet" href="assets/css/main.css?v=tv4320rn7g">
+  <link rel="stylesheet" href="assets/css/api-code.css">
+  <title>API Examples</title>
+</head>
+<body>
+<br>
+  <header id="header">
+    <img src="images/Tweakpy-logo.jpg" class="logo" width="120" height="120" alt="">
+    <div class="content">
+        <div class="inner">
+            <h1>Tweakpy Group</h1>
+            <p>TEXT</p>
+        </div>
+    </div></header>
+<br>
+<h1 style="text-align: center;">API-Examples</h1>
+
+
+<br>
+<h2 style="text-align: center;">IP Info :</h2>
+<pre><code class="language-js"><p>// url = https://jftv.pythonanywhere.com/ip/(ip)</p>
+<p>import requests</p>
+<p>ip=input('[?] Enter ip : ')</p>
+<p>respone=requests.get('https://jftv.pythonanywhere.com/ip/'+ip).text</p>
+<p>print(respone)</p>
+<br>
+<p>Respone should Be : </p>
+<p>{"Telegram":"@TweakPY & @vv1ck","response":"{'ip': '127.0.0.1', 'city': 'Riyadh', 'region': 'Eastern Province', 'country': 'SA', 'loc': '98.2848,055.1084', 'org': 'Saudi Telecom Company JSC', 'timezone': 'Asia/Riyadh'}"}</p> 
+</code></pre>
+<br>
+
+
+
+
+<br>
+<h2 style="text-align: center;">IG info :</h2>
+<pre><code class="language-js"><p>// url = https://jftv.pythonanywhere.com/IG-INFO/(user)</p>
+<p>import requests</p>
+<p>user=input('[?] Enter username : ')</p>
+<p>respone=requests.get('https://jftv.pythonanywhere.com/IG-INFO/'+user).text</p>
+<p>print(respone)</p>
+<br>
+<p>Respone should Be : </p>
+<p>{"Telegram":"@TweakPY & @vv1ck","response":"{'multiple_users_found': False, 'email_sent': False, 'sms_sent': False, 'lookup_source': 'username', 'corrected_input': 'rayan', 'obfuscated_email': '*@o*****.com', 'obfuscated_phone': '+* ***-***-**44', 'user': {'pk': 669509229, 'username': 'vv1ck', 'full_name': 'vv1ck', 'is_private': True, 'profile_pic_url': 'https://instagram.fbhz2-2.fna.fbcdn.net/v/userpic.0000000', 'is_verified': True, 'has_anonymous_profile_picture': True, 'has_highlight_reels': False, 'account_badges': []}, 'has_valid_phone': True, 'can_email_reset': True, 'can_sms_reset': True, 'can_wa_reset': False, 'user_id': 00000000, 'email': 'tweakpy', 'phone_number': 'tweakpy', 'fb_login_option': True, 'status': 'ok'}"}</p> 
+</code></pre>
+<br>
+
+
+
+<br>  
+<h2 style="text-align: center;">IG Checker Reg :</h2>
+<pre><code class="language-js"><p>// url = https://jftv.pythonanywhere.com/IGC/(user)</p>
+<p>import requests</p>
+<p>user=input('[?] Enter username : ')</p>
+<p>respone=requests.get('https://jftv.pythonanywhere.com/IGC/'+user).text</p>
+<p>print(respone)</p>
+<br>
+<p>Respone should Be : </p>
+<p>{"Telegram":"@TweakPY & @vv1ck","response":"Available"}</p>
+</code></pre>
+<br>
+
+
+
+
+<br>
+<h2 style="text-align: center;">IG Mail Link :</h2>
+<pre><code class="language-js"><p>// url = https://jftv.pythonanywhere.com/IGMail/(email)</p>
+<p>import requests</p>
+<p>email=input('[?] Enter email : ')</p>
+<p>respone=requests.get('https://jftv.pythonanywhere.com/IGMail/'+email).text</p>
+<p>print(respone)</p>
+<br>
+<p>Respone should Be : </p>
+<p>{"Telegram":"@TweakPY & @vv1ck","response":"Not Linked"}</p>
+</code></pre>
+<br>
+
+
+
+<br>
+<h2 style="text-align: center;">Proxy Grabber :</h2>
+<pre><code class="language-js"><p>// url = https://jftv.pythonanywhere.com/Proxy/(Protocol http-https-socks5-socks4)</p>
+<p>import requests</p>
+<p>Protocol=input('[?] Enter Protocol : ')</p>
+<p>respone=requests.get('https://jftv.pythonanywhere.com/Proxy/'+Protocol).text</p>
+<p>print("[+] Done Downloading Proxys\n")</p>
+<p>with open('proxys.txt', 'a') as x:
+  x.write(respone)</p>
+<br>
+<p>Respone should Be : </p>
+<p>i Think You Know What Respone You Will Get Here</p>
+</code></pre>
+<br>
+
+
+
+<br>
+<h2 style="text-align: center;">Twitter Mail Link :</h2>
+<pre><code class="language-js"><p>// url = https://jftv.pythonanywhere.com/TwitterMail/(email)</p>
+<p>import requests</p>
+<p>email=input('[?] Enter email : ')</p>
+<p>respone=requests.get('https://jftv.pythonanywhere.com/TwitterMail/'+email).text</p>
+<p>print(respone)</p>
+<br>
+<p>Respone should Be : </p>
+<p>{"Telegram":"@TweakPY & @vv1ck","response":"Linked"}</p>
+</code></pre>
+<br>
+
+
+
+
+<br>
+<h2 style="text-align: center;">Apple ID Login :</h2>
+<pre><code class="language-js"><p>// url = https://jftv.pythonanywhere.com/AppleID-L/(email):(pess)</p>
+<p>import requests</p>
+<p>email=input('[?] Enter email : ')</p>
+<p>password=input('[?] Enter Password')</p>
+<p>respone=requests.get(f'https://jftv.pythonanywhere.com/AppleID-L/{email}:{pess}').text</p>
+<p>print(respone)</p>
+<br>
+<p>Respone should Be : </p>
+<p>{"Telegram":"@TweakPY & @vv1ck","response":{"Email":"TweakPY@gmail.com","Login":"False","Password":"vv1ck"}}</p>
+</code></pre>
+<br>
+
+
+
+<br>
+<h2 style="text-align: center;">Text on Website :</h2>
+<pre><code class="language-js"><p>// url = https://jftv.pythonanywhere.com/text/(text)</p>
+<p>import requests</p>
+<p>text0=input('[?] Enter Text : ')</p>
+<p>respone=requests.get(f'https://jftv.pythonanywhere.com/text/'+text).text</p>
+<p>print(respone)</p>
+<br>
+<p>Respone should Be : </p>
+<p>{"Telegram":"@TweakPY & @vv1ck","response":"text"}</p>
+</code></pre>
+<br>
+
+
+<!-- Footer -->
+<footer id="footer"><p class="copyright">&copy; 2022 <a href="https://t.me/TweakPY" target="_blank">@TweakPY</a> &mdash; <a href="https://t.me/vv1ck" target="_blank">@vv1ck</a></p></footer></div>
+<br>
+
+<!--Srcipt-->
+<script src="assets/js/api-code.js"></script>
+</body>
+</html>
