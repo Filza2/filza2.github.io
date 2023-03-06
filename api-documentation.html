@@ -1,0 +1,381 @@
+<!DOCTYPE html><html lang="en" ><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate">
+<meta http-equiv="X-UA-Compatible">
+<title>Api Documentation</title>
+<meta name="description" content="Tweakpy Api Documentation">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism-okaidia.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap-flex.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
+<link rel="shortcut icon" type="image/png" href="images/website-logo-3.png">
+<style>
+/*Footer*/
+footer {background-color: #222;color: #fff;font-size: 14px;bottom: 0;position: fixed;left: 0;right: 0;text-align: center;z-index: 999;}
+footer p {margin: 10px 0;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida  Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+footer .fa-heart{color: red;}
+footer a {color: #3c97bf;text-decoration: none;margin-right:5px;}</style>
+<style>
+html,body {
+  height: 100%;
+}
+
+body {
+  background-color: #1a232b;
+  overflow: hidden;
+}
+
+.banner {
+  width: 300px;
+  height: 250px;
+  border: 1px solid #fff;
+  overflow: hidden;
+  margin: 50px auto;
+}
+
+.wrapper {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  position: relative;
+}
+
+.box {
+  transform: translate(-50%, -50%);
+  position: relative;
+  background-color: #ef4657;
+  width: 100px;
+  height: 20px;
+  border-radius: 5px;
+  margin-top: 5px;
+  display: block;
+}
+
+
+button {
+  display: inline-block;
+  outline: none;
+  border: none;
+  background-color: #ef4657;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 12px 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 13px;
+}
+button:hover {
+  background-color: #fff;
+  color: #ef4657;
+  text-decoration: none;
+}
+
+body {
+  background-color: #111;
+  overflow: auto;
+}
+
+header {
+  background-color: #191D1F;
+  height: 80px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: none;
+  outline: none;
+  color: #eb172c;
+}
+
+pre a {
+  color: #ef4657;
+}
+
+footer {
+  background-color: #262626;
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer a {
+  color: slategray;
+}
+footer span {
+  color: gray;
+}
+
+h1 {
+  color: #fff;
+  margin: auto;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+h3{
+  width: 1880px;
+}
+
+pre{
+  width: 1880px;
+  height: 300px;
+}
+
+.gsap-logo {
+  padding-left: 15px;
+}
+
+.bannerlab-logo {
+  width: 200px;
+  height: 80px;
+  padding-right: 15px;
+}
+
+.block-title {
+  background-color: #2E3D48;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 4px;
+  padding: 5px 10px;
+  text-align: center;
+}
+pre.language-javascript{
+	background-color: #222426;
+}
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 700px) {
+  h1 {
+    font-size: 1.2em;
+  }
+}
+
+
+[class*="col-"] {
+  width: 100%;
+}
+@media only screen and  (max-width:1880px){
+  pre{
+    width: 320%;
+    height: 10%;
+  }
+  h3{
+    width: 320%;
+  }
+}
+@media only screen and  (max-width:850px){
+  pre{
+    width: 100%;
+    height: 8%;
+  }
+  h3{
+    width: 100%;
+  }
+}
+
+</style></head><body>
+
+<!-- Header -->
+<header>
+  <h1><img src="images/index-logo.png" alt="" width="70"> Api Documentation  </h1>
+</header>
+
+
+<div class="container-fluid language-javascript">
+  <div class="row">
+    <div class="col-xs-12 col-lg-6 col-xl-4">
+<h3 class="block-title">Api Example</h3>
+
+<!-- Note -->
+<pre style="height: 150px;"><code>
+Use the POST or GET method. I allowed both so you don't get tired in programming 
+</code></pre>
+
+<br>
+<!-- code 1 -->
+<pre><code>// ip informations 
+// url = https://tpy.onrender.com/ip-info?ip=
+import requests
+ip=input('[?] Enter ip : ') #Like 127.0.0.1
+respone=requests.get('https://tpy.onrender.com/ip-info?ip='+ip).text
+print(respone)
+                
+// Respone should Be : 
+{"Telegram":"@TweakPY & @vv1ck","response":"{'ip': '127.0.0.1', 'city': 'Riyadh','region': 'Eastern Province', 
+'country': 'SA','loc': '98.2848,055.1084','org': 'Saudi Telecom Company JSC', 'timezone': 'Asia/Riyadh'}"} </code></pre>
+
+<br>
+<!-- code 2 -->
+<pre><code>// instagram Account informations  
+// url = https://tpy.onrender.com/ig-info?user=
+import requests
+user=input('[?] Enter username : ') #Like tweakpy
+respone=requests.get('https://tpy.onrender.com/ig-info?user='+user).text
+print(respone)
+  
+// Respone should Be : 
+{"Telegram":"@TweakPY & @vv1ck","response":"{'multiple_users_found': False, 'email_sent': False, 'sms_sent': False, 'lookup_source': 'username', 'corrected_input': 'rayan', 'obfuscated_email': '*@o*****.com', 'obfuscated_phone': '+* ***-***-**44', 
+'user': {'pk': 669509229, 'username': 'vv1ck', 'full_name': 'vv1ck', 'is_private': True, 'profile_pic_url': 'https://instagram.fbhz2-2.fna.fb', 'is_verified': True, 'has_anonymous_profile_picture': True, 'has_highlight_reels': False, 
+'account_badges': []}, 'has_valid_phone': True, 'can_email_reset': True, 'can_sms_reset': True, 'can_wa_reset': False, 'user_id': 0, 'email': 'tweakpy', 'phone_number': 'tweakpy', 'fb_login_option': True, 'status': 'ok'}"} </code></pre>
+						
+<br>
+<!-- code 3 -->
+<pre><code>// instagram username Checker 
+// url = https://tpy.onrender.com/ig-checker?user=
+import requests
+user=input('[?] Enter username : ')
+respone=requests.get('https://tpy.onrender.com/ig-checker?user='+user).text
+print(respone)
+  
+// Respone should Be : 
+{"Telegram":"@TweakPY & @vv1ck","response":"Available"}
+</code></pre>
+
+<br>
+<!-- code 4 -->
+<pre><code>// instagram Email Link 
+// url = https://tpy.onrender.com/ig-email-link?email=
+import requests
+email=input('[?] Enter email : ')
+respone=requests.get('https://tpy.onrender.com/ig-email-link?email='+email).text
+print(respone)
+  
+// Respone should Be : 
+{"Telegram":"@TweakPY & @vv1ck","response":"Not Linked"}
+</code></pre>
+
+<br>
+<!-- code 5 -->
+<pre><code>// Proxy's Grabber
+// url = https://tpy.onrender.com/proxy-grabber?p=
+import requests
+Protocol=input('[?] Enter Protocol : ') #Like http & etc
+respone=requests.get('https://tpy.onrender.com/proxy-grabber?p='+Protocol).text
+print("[+] Done Downloading Proxys\n")
+with open('proxys.txt', 'a') as x:
+  x.write(respone)
+  
+// Respone should Be : 
+i Think You Know What Respone You Will Get Here</code></pre>
+
+<br>
+<!-- code 6 -->
+<pre><code>// Twitter Email Link 
+// url = https://tpy.onrender.com/tw-email-link?email=
+import requests
+email=input('[?] Enter email : ')
+respone=requests.get('https://tpy.onrender.com/tw-email-link?email='+email).text
+print(respone)
+  
+// Respone should Be : 
+{"Telegram":"@TweakPY & @vv1ck","response":"Linked"}</code></pre>
+
+<br>
+<!-- code 7 -->
+<pre><code>// Apple ID Login
+// url = https://jftv.pythonanywhere.com/appleid-login&email=&password=
+import requests
+email=input('[?] Enter email : ')
+password=input('[?] Enter Password')
+respone=requests.get(f'https://tpy.onrender.com/appleid-login?email={email}&password={password}').text
+print(respone)
+  
+// Respone should Be : 
+{"Telegram":"@TweakPY & @vv1ck","response":{"Email":"TweakPY@gmail.com","Login":"False","Password":"vv1ck"}}</code></pre>
+
+<br>
+<!-- code 8 -->
+<pre><code>// Short urls
+// url = https://tpy.onrender.com/short-url?url=
+import requests
+url=input('[?] Enter The url : ') #Like https://google.com
+respone=requests.get('https://tpy.onrender.com/short-url?url='+url).text
+print(respone)
+    
+// Respone should Be : 
+{"Telegram":"@TweakPY & @vv1ck","response":{"long-url":"https://google.com","short-url":"https://v.ht/fo56"}}</code></pre>
+  
+<br>
+<!-- code 9 -->
+<pre><code>// Phone Number informations
+// url = https://tpy.onrender.com/number-info?code=&number=
+import requests
+code=input('[?] Enter The country code : ') #Like 966
+number=input('[?] Enter The phone number :') #Like 500000000
+respone=requests.get(f'https://tpy.onrender.com/number-info?code={code}&number={number}').text
+print(respone)
+      
+// Respone should Be : 
+{"Telegram":"@TweakPY & @vv1ck","response":{"Country":"SA","Name":"احمد","Phone":"0500000000"}}</code></pre>
+
+<br>
+<!-- code 10 -->
+<pre><code>// Telegram channel messages
+// url = https://tpy.onrender.com/tele-messages?user=&only_remove=
+import requests
+user=input('[?] Enter The user : ') #Like vv1ck
+only_remove=input('[?] You want to see only deleted messages or all messages : ') #You must type "true" if you want to show only deleted messages, and when you want to display all messages, type anything that does not matter
+respone=requests.get(f'https://tpy.onrender.com/tele-messages?user={user}&only_remove={only_remove}').json()
+print(respone)
+        
+// Respone should Be : 
+{"Telegram":"@TweakPY & @vv1ck","response":{"messages":[{"deleted":"25 Feb, 00:29","msg":"Hi","posted":"25 Feb, 00:28"}]}}</code></pre>
+  
+<br>
+<!-- code 11 -->
+<pre><code>// Telegram user or channel informations
+// url = https://tpy.onrender.com/tele-info?user=
+import requests
+user=input('[?] Enter The user : ') #Like tweakpy
+respone=requests.get('https://tpy.onrender.com/tele-info?user='+user).json()
+print(respone)
+          
+// Respone should Be : 
+{"Telegram":"@TweakPY & @vv1ck","response":{"description":"I'm a small description","type":"channel","subscribers count":"10 781 subscribers","user":"@tweakpy"}}</code></pre>
+    
+<br>
+<!-- code 11 -->
+<pre><code>// Your ip & user-agent
+// url = https://tpy.onrender.com/myinfo
+import requests
+respone=requests.get('https://tpy.onrender.com/myinfo').text
+print(respone)
+            
+// Respone should Be : 
+{"Telegram":"@TweakPY & @vv1ck","response":{"ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/110.0"}}</code></pre>
+      
+<br>
+
+
+<!--new code space-->
+<br><br>
+</div>
+
+<!-- close & End of the codes -->
+</div><br><br><br><br>
+
+
+
+
+<!-- Footer -->
+<footer><p>Created with <i class="fa fa-heart"></i> by<a target="_blank" href="https://t.me/TweakPY"> Filza : </a><a target="_blank"  href="https://github.com/Filza2"><i class="fab fa-github fa-2x"></i></a><a target="_blank" href="https://t.me/TweakPY"><i class="fab fa-telegram fa-2x"></i></a> </p></footer>
+
+
+<!-- scripts -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/prism.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+</body></html>
