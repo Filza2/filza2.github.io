@@ -228,9 +228,8 @@ respone=requests.get('https://tpy.onrender.com/ig-info?user='+user).text
 print(respone)
   
 // Respone should Be : 
-{"Telegram":"@TweakPY & @vv1ck","response":"{'multiple_users_found': False, 'email_sent': False, 'sms_sent': False, 'lookup_source': 'username', 'corrected_input': 'rayan', 'obfuscated_email': '*@o*****.com', 'obfuscated_phone': '+* ***-***-**44', 
-'user': {'pk': 669509229, 'username': 'vv1ck', 'full_name': 'vv1ck', 'is_private': True, 'profile_pic_url': 'https://instagram.fbhz2-2.fna.fb', 'is_verified': True, 'has_anonymous_profile_picture': True, 'has_highlight_reels': False, 
-'account_badges': []}, 'has_valid_phone': True, 'can_email_reset': True, 'can_sms_reset': True, 'can_wa_reset': False, 'user_id': 0, 'email': 'tweakpy', 'phone_number': 'tweakpy', 'fb_login_option': True, 'status': 'ok'}"} </code></pre>
+{"Telegram":"@TweakPY & @vv1ck","response":{"Email":"*@v*****.com","Name":"TweakPY","can_email_reset":true,"can_sms_reset":true,"has_valid_phone_number":true,
+"phone_Number":"+* ***-***-**54","private":true,"profile_pic_url":"https://scontent-sea1-1.cdninstagram.com/","user_id":66666655,"verified":false}} </code></pre>
 						
 <br>
 <!-- code 3 -->
@@ -295,7 +294,7 @@ respone=requests.get(f'https://tpy.onrender.com/appleid-login?email={email}&pass
 print(respone)
   
 // Respone should Be : 
-{"Telegram":"@TweakPY & @vv1ck","response":{"Email":"TweakPY@gmail.com","Login":"False","Password":"vv1ck"}}</code></pre>
+{"Telegram":"@TweakPY & @vv1ck","response":{"Email":"TweakPY@gmail.com","Login":"done","Password":"vv1ck"}}</code></pre>
 
 <br>
 <!-- code 8 -->
@@ -328,7 +327,7 @@ print(respone)
 // url = https://tpy.onrender.com/tele-messages?user=&only_remove=
 import requests
 user=input('[?] Enter The user : ') #Like vv1ck
-only_remove=input('[?] You want to see only deleted messages or all messages : ') #You must type "true" if you want to show only deleted messages, and when you want to display all messages, type anything that does not matter
+only_remove=input('[?] You want to see only deleted messages or all messages : ') #You must type "true" if you want to show only deleted messages, and when you want to display all messages, type anything that does not matter  
 respone=requests.get(f'https://tpy.onrender.com/tele-messages?user={user}&only_remove={only_remove}').json()
 print(respone)
         
