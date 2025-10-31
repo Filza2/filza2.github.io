@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="icon" href="/images/Saudi_tech-logo-green.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Redirect To The API - إعادة التوجيه إلى API."/>
+    <title>إعادة التوجيه</title>
+  </head>
+  <body>
+    <h1>مرحبًا، انتظر ثانيةً وسأقوم بتوجيهك إلى المسار الصحيح.</h1>
+    <br>
+    <h1>Hey there, Wait a second i will redirect you to the right track.</h1>
+    <script>
+      let sleep=(ms)=>{
+        return new Promise((resolve)=>setTimeout(resolve,ms));
+      };
+      sleep(500).then(()=>{
+        window.location.replace("https://tpy.onrender.com");
+      });
+    </script>
+  </body>
+</html>

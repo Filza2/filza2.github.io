@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Scripts & Tools">
+<title> Scripts & Tools </title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="/images/Saudi_tech-logo-green.png" type="image/x-icon">
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0}
+html,body{
+  height:100%;
+  background:#0a0f14;
+  color:#b5c5c0;
+  font-family:'Cairo',sans-serif;
+  overflow-x:hidden;
+  overflow-y:auto;}
+/* === PRELOADER === */
+#preloader{
+  position:fixed;
+  inset:0;
+  z-index:20;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#0a0f14;
+  animation:fadeOut 0.4s 1.3s forwards;}
+#preloader .logo-box{
+  position:relative;
+  width:120px;
+  height:120px;
+  background:#11181f;
+  border:1px solid #1fc77e;
+  border-radius:18px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 0 20px rgba(31,199,126,.25);}
+#preloader img{
+  width:70px;
+  height:auto;
+  filter:drop-shadow(0 0 10px #1fc77e);}
+.spark{
+  position:absolute;
+  width:2px;
+  height:40px;
+  background:linear-gradient(#1fc77e,transparent);
+  filter:drop-shadow(0 0 6px #1fc77e);
+  animation:sparks 1s ease-out infinite;}
+@keyframes sparks{from{transform:translate(var(--x,0),var(--y,0)) rotate(var(--r,0)) scaleY(0);opacity:1}40%{transform:translate(var(--x,0),var(--y,0)) rotate(var(--r,0)) scaleY(1.2);opacity:1}to{transform:translate(var(--x,0),var(--y,0)) rotate(var(--r,0)) scaleY(0);opacity:0}}
+@keyframes fadeOut{to{opacity:0;visibility:hidden}}
+
+/* === SKIP INTRO === */
+#skipIntro{
+  position:fixed;
+  bottom:25px;
+  right:25px;
+  background:rgba(31,199,126,0.15);
+  color:#b5c5c0;
+  border:1px solid rgba(31,199,126,0.4);
+  padding:8px 14px;
+  border-radius:8px;
+  cursor:pointer;
+  font-size:14px;
+  z-index:25;
+  transition:background .3s,color .3s;}
+#skipIntro:hover{
+  background:rgba(31,199,126,0.35);
+  color:#fff;}
+.fadeOut{
+  animation:fadeOutBtn 0.4s forwards;}
+@keyframes fadeOutBtn{to{opacity:0;visibility:hidden}}
+
+/* === BACKGROUNDS === */
+#mindCanvas{
+  position:fixed;
+  inset:0;
+  z-index:1;
+  background:#0a0f14;}
+#galaxyCanvas{
+  position:fixed;
+  inset:0;
+  z-index:2;
+  pointer-events:none;}
+
+/* === TOOLS UI === */
+.tools-ui{
+  position:relative;
+  z-index:4;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+  padding:min(8vh,80px) 4vw;gap:3vh;}
+.search-bar{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+  justify-content:center;
+  width:100%;
+  max-width:700px;}
+.search-bar input{
+  flex:1;
+  padding:10px 14px;
+  border-radius:8px;
+  border:1px solid #1fc77e;
+  background:#11181f;
+  color:#b5c5c0;
+  min-width:150px;
+  max-width:300px;
+  font-size:clamp(14px,2vw,18px);
+  outline:none;}
+
+/* Cards */
+#toolsContainer{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  justify-content:center;
+  align-content:flex-start;
+  padding:20px;
+  overflow-y:auto;
+  max-height:calc(100vh - 200px);
+  width:100%;}
+.card{
+  background:#11181f;
+  border:1px solid rgba(31,199,126,.25);
+  border-radius:12px;
+  padding:18px;
+  width:clamp(240px,28vw,300px);
+  text-align:center;
+  color:#b5c5c0;
+  backdrop-filter:blur(6px);
+  transition:transform .25s,box-shadow .25s,border-color .25s;
+  box-shadow:0 0 10px rgba(31,199,126,.1);}
+.card:hover{
+  transform:translateY(-6px) scale(1.03);
+  box-shadow:0 0 25px rgba(31,199,126,.4);
+  border-color:rgba(31,199,126,.6);}
+.card h3{
+  color:#1fc77e;
+  margin-bottom:10px;
+  font-size:clamp(18px,2vw,22px);} 
+.card p{
+  opacity:0.9;
+  font-size:clamp(13px,1.8vw,16px); 
+  white-space:normal; 
+  word-break:break-word;}
+.tool-img{
+  width:100%;
+  height:auto;
+  border-radius:8px;
+  margin:10px 0;
+  object-fit:cover;}
+.download-btn{
+  display:inline-block;
+  margin-top:12px;
+  padding:10px 16px;
+  background:#1fc77e;
+  color:#0a0f14;
+  font-weight:600;
+  border-radius:8px;
+  text-decoration:none;
+  text-align:center;
+  transition:background .25s,transform .15s;}
+.download-btn:hover{
+  background:#2eea98;
+  transform:scale(1.02);}
+@media(max-width:768px){.card{width:80vw;}}
+</style>
+</head>
+
+
+<body>
+  <div id="preloader">
+    <div class="logo-box" id="preLogoBox">
+      <img src="/images/Saudi_tech-logo-green.png" alt="LOGO">
+    </div></div>
+    <button id="skipIntro">Skip Intro ⏩</button>
+    <canvas id="mindCanvas"></canvas>
+    <canvas id="galaxyCanvas"></canvas>
+    <div class="tools-ui">
+      <div class="search-bar">
+        <input id="searchInput" type="text" placeholder="Tools Search..."></div>
+        <div id="toolsContainer">
+          
+          <div class="card" data-repo="Calculator">
+            <h3>Calculator</h3>
+            <img src="/images/Saudi_tech-logo-green.png" alt="Calculator" class="tool-img">
+            <p>Perform basic and scientific calculations easily.</p>
+            <a href="" class="download-btn" target="_blank" rel="noopener">Download</a>
+          </div>
+          
+          <div class="card" data-repo="image-converter">
+            <h3>Image Converter</h3>
+            <img src="/images/tools/Saudi_tech-logo-green.png" alt="Image-Converter" class="tool-img">
+            <p>Convert images between formats instantly.</p>
+            <a href="" class="download-btn" target="_blank" rel="noopener">Download</a>
+          </div>
+          
+          <div class="card" data-repo="ai-chat">
+            <h3>AI Chat</h3>
+            <img src="/images/tools/Saudi_tech-logo-green.png" alt="AI Chat" class="tool-img">
+            <p>Talk with smart AI directly in your browser.</p>
+            <a href="" class="download-btn" target="_blank" rel="noopener">Download</a>
+          </div>
+          
+          <div class="card" data-repo="image-converter">
+            <h3>Code Formatter</h3>
+            <img src="/images/tools/Saudi_tech-logo-green.png" alt="Code-Formatter" class="tool-img">
+            <p>Clean and beautify your code automatically.</p>
+            <a href="" class="download-btn" target="_blank" rel="noopener">Download</a>
+          </div>
+          
+          <div class="card" data-repo="weather-tracker">
+            <h3>Weather Tracker</h3>
+            <img src="/images/tools/Saudi_tech-logo-green.png" alt="Weather-Tracker" class="tool-img">
+            <p>Get real-time weather updates.</p>
+            <a href="" class="download-btn" target="_blank" rel="noopener">Download</a>
+          </div>
+
+        </div></div>
+
+
+
+<script>
+/* ==== SPARKS AROUND BOX ==== */
+const box=document.getElementById('preLogoBox');
+for(let i=0;i<30;i++){const s=document.createElement('div');s.className='spark';const side=Math.floor(Math.random()*4);const offset=60+Math.random()*30;let x=0,y=0,r=0;if(side===0){x=offset;y=Math.random()*120-60;r=90;}else if(side===1){x=-offset;y=Math.random()*120-60;r=-90;}else if(side===2){y=offset;x=Math.random()*120-60;r=180;}else{y=-offset;x=Math.random()*120-60;r=0;}s.style.setProperty('--x',x+'px');s.style.setProperty('--y',y+'px');s.style.setProperty('--r',r+'deg');s.style.left='50%';s.style.top='50%';s.style.transform='translate(-50%,-50%)';s.style.animationDelay=(i*0.02)+'s';box.appendChild(s);}
+
+/* ==== SKIP ==== */
+const skipBtn=document.getElementById('skipIntro');
+setTimeout(()=>skipBtn.classList.add('fadeOut'),1300);
+skipBtn.addEventListener('click',()=>{
+  const pre=document.getElementById('preloader');
+  pre.style.transition='opacity 0.4s ease';
+  pre.style.opacity='0';
+  setTimeout(()=>{pre.style.display='none';},400);
+  skipBtn.style.display='none';
+});
+
+/* ==== BACKGROUND ANIMATIONS ==== */
+const cvMind=document.getElementById('mindCanvas'), ctxM=cvMind.getContext('2d');
+let WM,HM,N=160,nodes=[],density=1,dir=-1;
+function resizeM(){WM=cvMind.width=innerWidth;HM=cvMind.height=innerHeight;}
+resizeM();addEventListener('resize',resizeM);
+function rand(a,b){return Math.random()*(b-a)+a}
+function spawnM(){nodes=[...Array(N)].map(()=>({x:rand(0,WM),y:rand(0,HM),vx:rand(-.3,.3),vy:rand(-.3,.3)}));}
+spawnM();
+function tickM(){
+  ctxM.clearRect(0,0,WM,HM);
+  const g=ctxM.createRadialGradient(WM/2,HM/2,10,WM/2,HM/2,Math.max(WM,HM)/2);
+  g.addColorStop(0,'rgba(31,199,126,.08)');g.addColorStop(1,'rgba(0,0,0,0)');
+  ctxM.fillStyle=g;ctxM.fillRect(0,0,WM,HM);
+  for(const p of nodes){
+    p.x+=p.vx;p.y+=p.vy;
+    if(p.x<0||p.x>WM)p.vx*=-1;
+    if(p.y<0||p.y>HM)p.vy*=-1;
+  }
+  const linkDist=160;
+  for(let i=0;i<nodes.length;i++){
+    for(let j=i+1;j<nodes.length;j++){
+      const a=nodes[i],b=nodes[j];const d=Math.hypot(a.x-b.x,a.y-b.y);
+      if(d<linkDist*density){
+        ctxM.globalAlpha=1 - d/(linkDist*density);
+        ctxM.strokeStyle='#1fc77e';ctxM.lineWidth=1;
+        ctxM.beginPath();ctxM.moveTo(a.x,a.y);ctxM.lineTo(b.x,b.y);ctxM.stroke();
+      }
+    }
+  }
+  ctxM.globalAlpha=1;
+  for(const p of nodes){
+    ctxM.fillStyle='#1fc77e';ctxM.beginPath();ctxM.arc(p.x,p.y,2,0,Math.PI*2);ctxM.fill();
+  }
+  density += dir*0.005;
+  if(density>1){density=1;dir=-1}
+  if(density<0.3){density=0.3;dir=1}
+  requestAnimationFrame(tickM);
+}
+tickM();
+
+const cv=document.getElementById('galaxyCanvas'),ctx=cv.getContext('2d');
+let W,H,t=0;
+const planets=[{r:70,R:120,speed:.7,color:'#1fc77e'},{r:10,R:170,speed:.5,color:'#1fc77e'},{r:14,R:220,speed:.35,color:'#1fc77e'},{r:9,R:260,speed:.25,color:'#1fc77e'},{r:11,R:300,speed:.2,color:'#1fc77e'}];
+function resize(){W=cv.width=innerWidth;H=cv.height=innerHeight}
+resize();addEventListener('resize',resize);
+function loop(){
+  t++;
+  ctx.clearRect(0,0,W,H);
+  const cx=W/2,cy=H/2;
+  for(let i=0;i<120;i++){
+    const x=(i*97+t*0.3)%W,y=(i*53+t*0.2)%H;
+    ctx.fillStyle=i%9?'rgba(100,255,190,.05)':'rgba(100,255,190,.15)';
+    ctx.fillRect(x,y,2,2);
+  }
+  const grad=ctx.createRadialGradient(cx,cy,10,cx,cy,260);
+  grad.addColorStop(0,'rgba(31,199,126,.18)');
+  grad.addColorStop(1,'rgba(0,0,0,0)');
+  ctx.fillStyle=grad;ctx.beginPath();ctx.arc(cx,cy,260,0,Math.PI*2);ctx.fill();
+  ctx.strokeStyle='rgba(31,199,126,.18)';ctx.lineWidth=1.2;
+  planets.forEach(p=>{
+    ctx.beginPath();ctx.arc(cx,cy,p.R,0,Math.PI*2);ctx.stroke();
+    const ang=(t*p.speed)/60;
+    const x=cx+Math.cos(ang)*p.R;
+    const y=cy+Math.sin(ang)*p.R;
+    const g2=ctx.createRadialGradient(x,y,1,x,y,p.r*2.2);
+    g2.addColorStop(0,p.color);g2.addColorStop(1,'rgba(0,0,0,0)');
+    ctx.fillStyle=g2;ctx.beginPath();ctx.arc(x,y,p.r*2.2,0,Math.PI*2);ctx.fill();
+    ctx.fillStyle=p.color;ctx.beginPath();ctx.arc(x,y,p.r,0,Math.PI*2);ctx.fill();
+  });
+  requestAnimationFrame(loop);
+}
+loop();
+
+const searchInput=document.getElementById('searchInput');
+searchInput.addEventListener('input',()=>{
+  const query=searchInput.value.toLowerCase();
+  document.querySelectorAll('.card').forEach(card=>{
+    const text=card.innerText.toLowerCase();
+    card.style.display=text.includes(query)?'block':'none';
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const baseTemplate = 'https://github.com/****/{repository_name}/archive/refs/heads/main.zip';
+  document.querySelectorAll('.card').forEach(card => {
+    const repo = card.dataset.repo || card.getAttribute('repo-name') || (card.querySelector('h3')?.innerText?.trim());
+    const btn = card.querySelector('.download-btn');
+    if (!repo || !btn) return;
+    const url = baseTemplate.replace('{repository_name}', encodeURIComponent(repo));
+    btn.href = url;
+    btn.target = '_blank';
+    btn.rel = 'noopener noreferrer';
+    btn.title = 'Download ' + repo;
+  });
+});
+</script>
+
+
+</body>
+</html>

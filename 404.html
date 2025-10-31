@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="title" content="الصفحة غير موجودة - Page Not Found">
+    <meta name="description" content="الصفحة غير موجودة - Page Not Found"/>
+    <meta name="keywords" content="Python,API,Cybersecurity,UX,UI,JavaScript,Frontend,Backend,Node.js,HTML,CSS,GitHub,Git,Coding,Web Tools,Cloud,REST API,Backend Systems,Data Science,Data Analysis,Machine Learning,Artificial Intelligence,Web Developer,Websites,AI,Projects,Tools,Programmer,Hacking,Hack,Scripts,Dev,Developer,Developing,Flask,FastAPI,Portfolio,Software Engineer,Filza2,Filza,Rayan,مطور,مبرمج,تطوير مواقع,تصميم مواقع,تطوير تطبيقات,برمجة ويب,الذكاء الاصطناعي,تعلم الآلة,تحليل البيانات,الأمن السيبراني,هندسة البرمجيات,التحول الرقمي,أدوات برمجية,مشاريع تقنية,مطور تطبيقات,مطور واجهات,واجهات المستخدم,تصميم تجربة المستخدم,أدوات تقنية,مشاريع مفتوحة المصدر,برمجة الأدوات,مطور بايثون,مطور فلاسك,مطور فاست اي بي اي,مهندس برمجيات,مطور مواقع,مطور ذكاء اصطناعي">
+    <meta name="author" content="Rayan (Filza2 / Filza)">
+    <meta name="application-name" content="404-Page Not Found">
+    <!-- Open Graph (for social media sharing) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://filza2.github.io/404.html">
+    <meta property="og:title" content="الصفحة غير موجودة - Page Not Found">
+    <meta property="og:description" content="الصفحة غير موجودة - Page Not Found.">
+    <meta property="og:image" content="https://filza2.github.io/images/Saudi_tech-logo.png">
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://filza2.github.io/404.html">
+    <meta name="twitter:title" content="الصفحة غير موجودة - Page Not Found">
+    <meta name="twitter:description" content="الصفحة غير موجودة - Page Not Found.">
+    <meta name="twitter:image" content="https://filza2.github.io/images/Saudi_tech-logo.png">
+    <!-- Additional SEO -->
+    <link rel="canonical" href="https://filza2.github.io/404.html">
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#006C35">
+
+    <title>لم يتم العثور على الصفحة</title>
+    <link rel="shortcut icon" type="image/png" href="images/Saudi_tech-logo.png">
+    <link rel="icon" href="/images/Saudi_tech-logo-green.png" type="image/x-icon">
+    <style>
+    html,body {min-height: 100%;margin: 0;padding: 0;}html {background: inherit;background-color: #0a0f12;}body {background-color: transparent !important;background-attachment: scroll !important;background-repeat: no-repeat;background-size: cover;}
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      overflow: hidden;
+      background: radial-gradient(ellipse at bottom, #0d1b0d, #000);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Finger Paint', cursive;
+    }
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+    .error-code {
+      font-size: 6em;
+      z-index: 2;
+      position: relative;
+      animation: float404 3s ease-in-out infinite;
+      letter-spacing: 15px;
+      text-align: center;
+    }
+    @keyframes float404 {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+    h2 {
+      z-index: 2;
+      margin: 10px 0;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 28px;
+      background: #004d26;
+      color: #fff;
+      border: 2px solid #00ff88;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      z-index: 2;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #00ff88;
+      color: #000;
+    }
+    .satellite {
+      position: absolute;
+      top: 30%;
+      left: -100px;
+      width: 80px;
+      transition: transform 1s;
+      animation: moveSatellite 8s linear forwards;
+      z-index: 1;
+    }
+    @keyframes moveSatellite {
+      0% { transform: translate(0, 0) rotate(0deg); opacity: 1; }
+      70% { transform: translate(120vw, 40vh) rotate(360deg); opacity: 1; }
+      90% { transform: translate(130vw, 45vh) rotate(450deg); opacity: 0.8; }
+      100% { transform: translate(140vw, 50vh) scale(0); opacity: 0; }
+    }
+    .explosion {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #ff0, #f00, transparent);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      opacity: 0;
+      animation: explode 1s ease-out forwards;
+      animation-delay: 7.5s;
+      z-index: 1;
+    }
+    @keyframes explode {
+      0% { transform: translate(-50%, -50%) scale(0); opacity: 1; }
+      50% { transform: translate(-50%, -50%) scale(1.5); opacity: 0.8; }
+      100% { transform: translate(-50%, -50%) scale(2); opacity: 0; }
+    }
+    @media(max-width: 768px) {
+      .error-code { font-size: 4em; letter-spacing: 10px; }
+      button { font-size: 0.9rem; padding: 10px 22px; }
+      .satellite { width: 60px; }
+    }
+    @media(max-width: 480px) {
+      .error-code { font-size: 3em; letter-spacing: 5px; }
+      button { font-size: 0.8rem; padding: 8px 18px; }
+      .satellite { width: 50px; }
+    }
+    </style>
+  </head>
+<body>
+  <canvas id="stars"></canvas>
+  <div class="error-code">4 0 4</div>
+  <h2>الصفحة غير موجودة</h2>
+  <button onclick="window.location.href='/index.html'">العودة للصفحة الرئيسية</button>
+  <img src="https://cdn-icons-png.flaticon.com/512/3212/3212608.png" class="satellite" alt="Satellite">
+  <div class="explosion"></div>
+
+  <script>
+    // رسم النجوم المتحركة
+    const canvas = document.getElementById('stars');
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    const stars = [];
+    for (let i = 0; i < 150; i++) {
+      stars.push({x: Math.random() * canvas.width,
+                  y: Math.random() * canvas.height,
+                  radius: Math.random() * 1.5,
+                  dx: (Math.random() - 0.5) * 0.5,
+                  dy: (Math.random() - 0.5) * 0.5});
+    }
+    function drawStars() {
+      ctx.clearRect(0,0,canvas.width,canvas.height);
+      ctx.fillStyle = "white";
+      stars.forEach(s => {
+        ctx.beginPath();
+        ctx.arc(s.x, s.y, s.radius, 0, Math.PI*2);
+        ctx.fill();
+        s.x += s.dx;
+        s.y += s.dy;
+        if(s.x < 0 || s.x > canvas.width) s.dx *= -1;
+        if(s.y < 0 || s.y > canvas.height) s.dy *= -1;
+      });
+      requestAnimationFrame(drawStars);
+    }
+    drawStars();
+    window.onresize = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+  </script>
+</body>
+</html>

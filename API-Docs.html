@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="title" content="API Docs">
+    <meta name="description" content="Explore the official Filza API documentation — detailed endpoints, authentication guides, request & response examples, and integration notes for developers building on Filza services.">
+    <meta name="keywords" content="Python,API,Cybersecurity,UX,UI,JavaScript,Frontend,Backend,Node.js,HTML,CSS,GitHub,Git,Coding,Web Tools,Cloud,REST API,Backend Systems,Data Science,Data Analysis,Machine Learning,Artificial Intelligence,Web Developer,Websites,AI,Projects,Tools,Programmer,Hacking,Hack,Scripts,Dev,Developer,Developing,Flask,FastAPI,Portfolio,Software Engineer,Filza2,Filza,Rayan,مطور,مبرمج,تطوير مواقع,تصميم مواقع,تطوير تطبيقات,برمجة ويب,الذكاء الاصطناعي,تعلم الآلة,تحليل البيانات,الأمن السيبراني,هندسة البرمجيات,التحول الرقمي,أدوات برمجية,مشاريع تقنية,مطور تطبيقات,مطور واجهات,واجهات المستخدم,تصميم تجربة المستخدم,أدوات تقنية,مشاريع مفتوحة المصدر,برمجة الأدوات,مطور بايثون,مطور فلاسك,مطور فاست اي بي اي,مهندس برمجيات,مطور مواقع,مطور ذكاء اصطناعي">
+    <meta name="author" content="Rayan (Filza2 / Filza)">
+    <meta name="application-name" content="API Documentation">
+    <!-- Open Graph (for social media sharing) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://filza2.github.io/API-Docs.html">
+    <meta property="og:title" content="API Docs">
+    <meta property="og:description" content="Explore the official Filza API documentation — detailed endpoints, authentication guides, request & response examples, and integration notes for developers building on Filza services.">
+    <meta property="og:image" content="https://filza2.github.io/images/Saudi_tech-logo-green.png">
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://filza2.github.io/API-Docs.html">
+    <meta name="twitter:title" content="API Docs">
+    <meta name="twitter:description" content="Explore the official Filza API documentation — detailed endpoints, authentication guides, request & response examples, and integration notes for developers building on Filza services.">
+    <meta name="twitter:image" content="https://filza2.github.io/images/Saudi_tech-logo-green.png">
+    <!-- Additional SEO -->
+    <link rel="canonical" href="https://filza2.github.io/API-Docs.html">
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#006C35">
+
+    <title>API Docs</title>
+    <link rel="icon" href="/images/API-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+    html,body {min-height: 100%;margin: 0;padding: 0;}html {background: inherit;background-color: #0a0f12;}body {background-color: transparent !important;background-attachment: scroll !important;background-repeat: no-repeat;background-size: cover;}
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0a0f12;
+      color: #fff;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background-color: #0b160f;
+      border-bottom: 2px solid #14532d;
+    }
+    header i {
+      color: #22c55e;
+      font-size: 2.5rem;
+      margin-right: 15px;
+    }
+    header h1 {
+      font-size: 2rem;
+      color: #22c55e;
+      margin: 0;
+    }
+    .endpoint {
+      margin: 30px auto;
+      width: 90%;
+      max-width: 900px;
+      background: #0e151a;
+      border: 1px solid #1f2f24;
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .endpoint h3 {
+      margin-top: 0;
+      color: #16a34a;
+    }
+    .endpoint .url-box {
+      background: #1a232b;
+      padding: 10px;
+      border: 1px solid #1f2f24;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: monospace;
+      color: #9fd8b3;
+    }
+    .endpoint .buttons {
+      text-align: right;
+      margin-bottom: 10px;
+    }
+    .endpoint button {
+      background: #22c55e;
+      border: none;
+      color: #fff;
+      padding: 6px 12px;
+      margin-left: 5px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+    .endpoint button:hover {
+      background: #16a34a;
+    }
+    .endpoint pre {
+      background: #0e151a;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+      font-family: monospace;
+      font-size: 0.9rem;
+      color: #e5e5e5;
+      text-align: left;
+    }
+
+
+
+
+@media (max-width: 900px) {
+  header i { font-size: 1.8rem; }
+  header h1 { font-size: 1.4rem; }
+  .endpoint { padding: 14px; width: 94%; }
+  .endpoint h3 { font-size: 1rem; }
+  .endpoint button { padding: 7px 10px; font-size: 0.9rem; }
+}
+@media (max-width: 480px) {
+  header { padding: 12px; }
+  header i { font-size: 1.4rem; margin-right: 8px; }
+  header h1 { font-size: 1.05rem; }
+  .endpoint { margin: 12px 8px; padding: 12px; border-radius: 8px; }
+  .endpoint .url-box { padding: 8px; border-radius: 6px; }
+  .endpoint pre { font-size: 12px; padding: 10px; }
+  .endpoint button { padding: 6px 8px; font-size: 12px; }
+  .endpoint .buttons { justify-content: flex-end; gap: 6px; }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .endpoint { max-width: 900px; padding: 16px; }
+  .endpoint pre { font-size: 0.95rem; }
+}
+</style>
+</head>
+<body>
+  <header>
+    <i class="fas fa-code"></i>
+    <h1>API Docs</h1>
+  </header>
+
+
+  
+  <div class="endpoint">
+    <h3>IP Info</h3>
+    <div class="url-box">
+      https://tpy.onrender.com/ip-lookup?ip=
+      <button onclick="copyText('https://tpy.onrender.com/ip-lookup?ip=')">نسخ الرابط</button>
+    </div>
+    <div class="buttons">
+      <button onclick="toggleBox('example1')"> مثال </button>
+      <button onclick="toggleBox('response1')"> الرد المتوقع </button>
+    </div>
+    <pre id="example1" style="display:none;">import requests
+ip=input('[?] Enter ip : ') #Like 127.0.0.1
+response=requests.get('https://tpy.onrender.com/ip-lookup?ip='+ip).text
+print(responses)</pre>
+    <pre id="response1" style="display:none;">{"response":{"ip":"127.0.0.1","city":"Riyadh","region":"Riyadh Region","country":"SA","loc":"98.2133,055.1384","org":"Saudi Telecom Company JSC","timezone":"Asia/Riyadh"},"github":"https://github.com/filza2"}</pre>
+  </div>
+
+
+
+  <div class="endpoint">
+    <h3>Instagram Info</h3>
+    <div class="url-box">
+      https://tpy.onrender.com/instagram-user-info?user=
+      <button onclick="copyText('https://tpy.onrender.com/instagram-user-info?user=')">نسخ الرابط</button>
+    </div>
+    <div class="buttons">
+      <button onclick="toggleBox('ex2')"> مثال </button>
+      <button onclick="toggleBox('res2')"> الرد المتوقع </button>
+    </div>
+    <pre id="ex2" style="display:none;">import requests
+user=input('[?] Enter username : ')
+response=requests.get('https://tpy.onrender.com/instagram-user-info?user='+user).text
+print(response)</pre>
+    <pre id="res2" style="display:none;">{"response":{"Name":"myname","user_id":000000000,"Email":"*@*****.com","phone_Number":"+* ***-***-**64","verified":false,"private":true,"has_valid_phone_number":true,"can_email_reset":true,"can_sms_reset":true,"profile_pic_url":"https://scontent-sea5-1.cdninstagram.com/v/"},"github":"https://github.com/filza2"}</pre>
+  </div>
+
+
+  <div class="endpoint">
+    <h3>Instagram Checker</h3>
+    <div class="url-box">
+      https://tpy.onrender.com/instagram-username-check?user=
+      <button onclick="copyText('https://tpy.onrender.com/instagram-username-check?user=')">نسخ الرابط</button>
+    </div>
+    <div class="buttons">
+      <button onclick="toggleBox('ex3')"> مثال </button>
+      <button onclick="toggleBox('res3')"> الرد المتوقع </button>
+    </div>
+    <pre id="ex3" style="display:none;">import requests
+user=input('[?] Enter username : ')
+response=requests.get('https://tpy.onrender.com/instagram-username-check?user='+user).text
+print(response)</pre>
+    <pre id="res3" style="display:none;">{"status":"not available","github":"https://github.com/filza2"}</pre>
+  </div>
+
+
+
+  <div class="endpoint">
+    <h3>Instagram Email Link</h3>
+    <div class="url-box">
+      https://tpy.onrender.com/instagram-email-lookup?email=
+      <button onclick="copyText('https://tpy.onrender.com/instagram-email-lookup?email=')">نسخ الرابط</button>
+    </div>
+    <div class="buttons">
+      <button onclick="toggleBox('ex4')"> مثال </button>
+      <button onclick="toggleBox('res4')"> الرد المتوقع </button>
+    </div>
+    <pre id="ex4" style="display:none;">import requests
+email=input('[?] Enter email : ')
+response=requests.get('https://tpy.onrender.com/instagram-email-lookup?email='+email).text
+print(response)</pre>
+    <pre id="res4" style="display:none;">{"status":"not linked","github":"https://github.com/filza2"}</pre>
+  </div>
+
+
+
+  <div class="endpoint">
+    <h3>X Email Link</h3>
+    <div class="url-box">
+      https://tpy.onrender.com/x-email-lookup?email=
+      <button onclick="copyText('https://tpy.onrender.com/x-email-lookup?email=')">نسخ الرابط</button>
+    </div>
+    <div class="buttons">
+      <button onclick="toggleBox('ex5')"> مثال </button>
+      <button onclick="toggleBox('res5')"> الرد المتوقع </button>
+    </div>
+    <pre id="ex5" style="display:none;">import requests
+email=input('[?] Enter email : ')
+response=requests.get('https://tpy.onrender.com/x-email-lookup?email='+email).text
+print(response)</pre>
+    <pre id="res5" style="display:none;">{"status":"not linked","github":"https://github.com/filza2"}</pre>
+  </div>
+
+
+
+    <div class="endpoint">
+    <h3>Apple ID Login</h3>
+    <div class="url-box">
+      https://tpy.onrender.com/appleid-credential-check?email=&password=
+      <button onclick="copyText('https://tpy.onrender.com/appleid-credential-check?email={email}&password={password}')">نسخ الرابط</button>
+    </div>
+    <div class="buttons">
+      <button onclick="toggleBox('ex6')"> مثال </button>
+      <button onclick="toggleBox('res6')"> الرد المتوقع </button>
+    </div>
+    <pre id="ex6" style="display:none;">import requests
+email=input('[?] Enter email : ')
+password=input('[?] Enter Password')
+response=requests.get(f'https://tpy.onrender.com/appleid-credential-check?email={email}&password={password}').text
+print(response)</pre>
+    <pre id="res6" style="display:none;">{"status":"failed","data":{"email":"0000@00000.00000","password":"00000","login":false},"github":"https://github.com/filza2"}</pre>
+  </div>
+
+
+
+    <div class="endpoint">
+    <h3>Short urls</h3>
+    <div class="url-box">
+      https://tpy.onrender.com/shorten-url?url=
+      <button onclick="copyText('https://tpy.onrender.com/shorten-url?url=')">نسخ الرابط</button>
+    </div>
+    <div class="buttons">
+      <button onclick="toggleBox('ex7')"> مثال </button>
+      <button onclick="toggleBox('res7')"> الرد المتوقع </button>
+    </div>
+    <pre id="ex7" style="display:none;">import requests
+url=input('[?] Enter The url : ') #Like https://google.com
+response=requests.get('https://tpy.onrender.com/shorten-url?url='+url).text
+print(response)</pre>
+    <pre id="res7" style="display:none;">{"status":"success","data":{"original_url":"https://www.google.com","shortened_urls":{"hideuri.com":"https://hideuri.com/*****","is.gd":"https://is.gd/*****","da.gd":"https://da.gd/****"}},"github":"https://github.com/filza2"}</pre>
+  </div>
+
+
+
+    <div class="endpoint">
+    <h3>Phone Number Username</h3>
+    <div class="url-box">
+      https://tpy.onrender.com/phone-number-name?code=&number=
+      <button onclick="copyText('https://tpy.onrender.com/phone-number-name?code=&number=')">نسخ الرابط</button>
+    </div>
+    <div class="buttons">
+      <button onclick="toggleBox('ex8')"> مثال </button>
+      <button onclick="toggleBox('res8')"> الرد المتوقع </button>
+    </div>
+    <pre id="ex8" style="display:none;">import requests
+code=input('[?] Enter The country code : ') #Like 966 or SA
+number=input('[?] Enter The phone number :') #Like 500000000
+response=requests.get(f'https://tpy.onrender.com/phone-number-name?code={code}&number={number}').text
+print(response)</pre>
+    <pre id="res8" style="display:none;">{"country_code":"966","number":"50000000","names":"0000 00000","github":"https://github.com/filza2"}</pre>
+  </div>
+
+
+
+    <div class="endpoint">
+    <h3>Telegram Info</h3>
+    <div class="url-box">
+      https://tpy.onrender.com/telegram-user-info?user=
+      <button onclick="copyText('https://tpy.onrender.com/telegram-user-info?user=')">نسخ الرابط</button>
+    </div>
+    <div class="buttons">
+      <button onclick="toggleBox('ex9')"> مثال </button>
+      <button onclick="toggleBox('res9')"> الرد المتوقع </button>
+    </div>
+    <pre id="ex9" style="display:none;">import requests
+user=input('[?] Enter The user : ')#user without @
+response=requests.get('https://tpy.onrender.com/telegram-user-info?user='+user).json()
+print(response)</pre>
+    <pre id="res9" style="display:none;">{"user":"0000","name":"00000","description":"Hello, World!","type":"user","github":"https://github.com/filza2"}</pre>
+  </div>
+
+
+
+    <div class="endpoint">
+    <h3>My Info</h3>
+    <div class="url-box">
+      https://tpy.onrender.com/myinfo
+      <button onclick="copyText('https://tpy.onrender.com/myinfo')">نسخ الرابط</button>
+    </div>
+    <div class="buttons">
+      <button onclick="toggleBox('ex10')"> مثال </button>
+      <button onclick="toggleBox('res10')"> الرد المتوقع </button>
+    </div>
+    <pre id="ex10" style="display:none;">import requests
+response=requests.get('https://tpy.onrender.com/myinfo').text
+print(response)</pre>
+    <pre id="res10" style="display:none;">{"response":{"ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"},"ip_info":{"ip":"127.0.1.1","city":"Riyadh","region":"Riyadh Region","country":"SA","loc":"265.8546,22.9894","org":"Saudi Telecom Company JSC","timezone":"Asia/Riyadh"},"github":"https://github.com/filza2"}</pre>
+  </div>
+
+
+
+
+
+  <script>
+    function toggleBox(id) {
+      const box=document.getElementById(id);
+      box.style.display=(box.style.display==="none") ? "block" : "none";
+    }
+    function copyText(text) {
+      navigator.clipboard.writeText(text).then(()=>{
+        alert("تم النسخ ");
+      });
+    }
+  </script>
+</body>
+</html>

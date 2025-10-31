@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="title" content="Rayan | About & Portfolio - Developer (Filza)">
+    <meta name="description" content="Discover the work, background, and technical projects of Rayan (Filza) — a Saudi software developer specializing in Scripts,Tools,AI, cybersecurity, and web development -  اكتشف عمل وخلفية ومشاريع ريان (فيلزا) التقنية - مطور برمجيات سعودي متخصص في البرامج النصية والأدوات والذكاء الاصطناعي والأمن السيبراني وتطوير الويب.">
+    <meta name="keywords" content="Python,API,Cybersecurity,UX,UI,JavaScript,Frontend,Backend,Node.js,HTML,CSS,GitHub,Git,Coding,Web Tools,Cloud,REST API,Backend Systems,Data Science,Data Analysis,Machine Learning,Artificial Intelligence,Web Developer,Websites,AI,Projects,Tools,Programmer,Hacking,Hack,Scripts,Dev,Developer,Developing,Flask,FastAPI,Portfolio,Software Engineer,Filza2,Filza,Rayan,مطور,مبرمج,تطوير مواقع,تصميم مواقع,تطوير تطبيقات,برمجة ويب,الذكاء الاصطناعي,تعلم الآلة,تحليل البيانات,الأمن السيبراني,هندسة البرمجيات,التحول الرقمي,أدوات برمجية,مشاريع تقنية,مطور تطبيقات,مطور واجهات,واجهات المستخدم,تصميم تجربة المستخدم,أدوات تقنية,مشاريع مفتوحة المصدر,برمجة الأدوات,مطور بايثون,مطور فلاسك,مطور فاست اي بي اي,مهندس برمجيات,مطور مواقع,مطور ذكاء اصطناعي">
+    <meta name="author" content="Rayan (Filza2 / Filza)">
+    <meta name="application-name" content="Rayan | Filza Portfolio">
+    <!-- Open Graph (for social media sharing) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://filza2.github.io/About-Portfolio.html">
+    <meta property="og:title" content="Rayan | About & Portfolio - Developer (Filza)">
+    <meta property="og:description" content="Discover the work, background, and technical projects of Rayan (Filza) — a Saudi software developer specializing in Scripts,Tools,AI, cybersecurity, and web development -  اكتشف عمل وخلفية ومشاريع ريان (فيلزا) التقنية - مطور برمجيات سعودي متخصص في البرامج النصية والأدوات والذكاء الاصطناعي والأمن السيبراني وتطوير الويب.">
+    <meta property="og:image" content="https://filza2.github.io/images/Saudi_tech-logo-green.png">
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://filza2.github.io/About-Portfolio.html">
+    <meta name="twitter:title" content="Rayan | About & Portfolio - Developer (Filza)">
+    <meta name="twitter:description" content="Discover the work, background, and technical projects of Rayan (Filza) — a Saudi software developer specializing in Scripts,Tools,AI, cybersecurity, and web development -  اكتشف عمل وخلفية ومشاريع ريان (فيلزا) التقنية - مطور برمجيات سعودي متخصص في البرامج النصية والأدوات والذكاء الاصطناعي والأمن السيبراني وتطوير الويب.">
+    <meta name="twitter:image" content="https://filza2.github.io/images/Saudi_tech-logo-green.png">
+    <!-- Additional SEO -->
+    <link rel="canonical" href="https://filza2.github.io/About-Portfolio.html">
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#006C35">
+
+    <title>نبذة عني</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/Saudi_tech-logo-green.png" type="image/x-icon">
+    <style>
+    html,body {min-height: 100%;margin: 0;padding: 0;}html {background: inherit;background-color: #0a0f12;}body {background-color: transparent !important;background-attachment: scroll !important;background-repeat: no-repeat;background-size: cover;}
+    :root{
+      --bg:#0a0f12;
+      --bg-2:#0b1216;
+      --card:#11181e;
+      --text:#f2f6f8;
+      --muted:#a8b3bd;
+      --accent:#006C35;   
+      --accent-2:#16a34a;
+      --ring: rgba(0, 108, 53, .35);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; color:var(--text);
+      font-family:"Cairo", system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+      background: linear-gradient(180deg, var(--bg), #0b0f12 40%, var(--bg));
+      line-height:1.8; scroll-behavior:smooth;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{width:min(clamp(840px, 287.18vw, 1680px), 92%); margin-inline:auto}
+    header{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter:saturate(140%) blur(clamp(5px, 2.05vw, 11px));
+      background:linear-gradient(180deg, rgba(10,15,18,.88), rgba(10,15,18,.55));
+      border-bottom:clamp(1px, 0.26vw, 1px) solid rgba(255,255,255,.06);
+    }
+    .nav{display:flex; align-items:center; justify-content:space-between; padding:clamp(9px, 3.08vw, 18px) 0}
+    .brand{display:flex; align-items:center; gap:clamp(7px, 2.56vw, 14px); font-weight:900; letter-spacing:clamp(3px, 1.03vw, 6px)}
+    .mark{background:linear-gradient(180deg,#1c3a24,#0f2c1a);padding:0;
+      width:clamp(51px, 17.44vw, 102px); height:clamp(52px, 17.95vw, 105px); border-radius:clamp(9px, 3.08vw, 18px); display:grid; place-items:center;
+      
+      box-shadow:0 clamp(4px, 1.54vw, 9px) clamp(13px, 4.62vw, 27px) var(--ring);
+    }
+    .links{display:flex; gap:clamp(9px, 3.08vw, 18px); flex-wrap:wrap}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:clamp(5px, 2.05vw, 11px);
+      padding:clamp(7px, 2.56vw, 14px) clamp(11px, 4.10vw, 23px); border-radius:clamp(7px, 2.56vw, 14px);
+      color:var(--text); border:clamp(1px, 0.26vw, 1px) solid rgba(255,255,255,.08);
+      background:linear-gradient(180deg, #0e151a, #0a0f12);
+      transition:.18s ease; cursor:pointer; font-weight:700;
+    }
+    .btn:hover{transform:translateY(-clamp(1px, 0.26vw, 1px)); border-color:rgba(255,255,255,.18)}
+    .btn.primary{background:linear-gradient(180deg, var(--accent-2), var(--accent)); border-color:transparent}
+    section{position:relative; padding:clamp(21px, 7.18vw, 42px) 0}
+    .grid{display:grid; gap:clamp(15px, 5.13vw, 30px)}
+    @media (min-width:clamp(705px, 241.03vw, 1410px)){
+      .grid.cols-2{grid-template-columns:1.2fr .8fr}
+      
+    }
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+      border:clamp(1px, 0.26vw, 1px) solid rgba(255,255,255,.07);
+      border-radius:clamp(11px, 4.10vw, 23px); padding:clamp(13px, 4.62vw, 27px);
+      box-shadow:0 clamp(7px, 2.56vw, 14px) clamp(21px, 7.18vw, 42px) rgba(0,0,0,.25), inset 0 0 0 clamp(1px, 0.26vw, 1px) rgba(255,255,255,.02);
+    }
+    .title{font-size:clamp(clamp(22px, 7.69vw, 44px), clamp(11px, 4.00vw, 23px), clamp(36px, 12.31vw, 72px)); margin:0; line-height:1.25; font-weight:900}
+    .subtitle{color:var(--muted); font-weight:600; margin-top:clamp(4px, 1.54vw, 9px)}
+    .hero-cta{display:flex; gap:clamp(9px, 3.08vw, 18px); flex-wrap:wrap; margin-top:clamp(10px, 3.59vw, 21px)}
+    .section-title{margin:0 0 clamp(7px, 2.56vw, 14px); font-size:clamp(16px, 5.64vw, 32px)}
+    .badges{display:flex; gap:clamp(5px, 2.05vw, 11px); flex-wrap:wrap}
+    .badge{padding:clamp(5px, 2.05vw, 11px) clamp(9px, 3.08vw, 18px); border-radius:clamp(749px, 256.15vw, 1498px); font-weight:700; font-size:clamp(10px, 3.59vw, 21px);
+      background:rgba(0,108,53,.14); color:#baf7d0; border:clamp(1px, 0.26vw, 1px) solid rgba(0,108,53,.3)}
+    .muted{color:var(--muted)}
+    .projects{display:grid; gap:clamp(11px, 4.10vw, 23px)}
+    @media (min-width:clamp(569px, 194.87vw, 1139px)){ .projects{grid-template-columns:repeat(44,1fr)} }
+    .project{overflow:hidden; border-radius:clamp(10px, 3.59vw, 21px); border:clamp(1px, 0.26vw, 1px) solid rgba(255,255,255,.08);
+      background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01))}
+    .project .thumb{aspect-ratio:16/9; display:grid; place-items:center; background:#0e151a}
+    .project .body{padding:clamp(10px, 3.59vw, 21px)}
+    .project .body h3{margin:0 0 clamp(5px, 2.05vw, 11px)}
+    .project .tags{display:flex; flex-wrap:wrap; gap:clamp(5px, 2.05vw, 11px)}
+    .tag{font-size:clamp(9px, 3.08vw, 18px); padding:clamp(4px, 1.54vw, 9px) clamp(7px, 2.56vw, 14px); border-radius:clamp(749px, 256.15vw, 1498px); border:clamp(1px, 0.26vw, 1px) solid rgba(255,255,255,.12); color:var(--muted)}
+    .creative-wrap{
+      position:relative; isolation:isolate;
+      background: radial-gradient(clamp(899px, 307.69vw, 1799px) clamp(450px, 153.85vw, 900px) at 110% -10%, rgba(0,108,53,.14), transparent 60%),
+                  radial-gradient(clamp(899px, 307.69vw, 1799px) clamp(450px, 153.85vw, 900px) at -10% 110%, rgba(22,163,74,.10), transparent 60%),
+                  linear-gradient(180deg, var(--bg-2), #0a0f12);
+      border:clamp(1px, 0.26vw, 1px) solid rgba(255,255,255,.06);
+      border-radius:clamp(13px, 4.62vw, 27px); overflow:hidden;
+      box-shadow:0 clamp(15px, 5.13vw, 30px) clamp(44px, 15.38vw, 89px) rgba(0,0,0,.35);
+    }
+    .arabesque{
+      position:absolute; inset:0; pointer-events:none;
+      background-image:
+        repeating-linear-gradient(45deg, rgba(22,163,74,.06) 0 clamp(1px, 0.51vw, 2px), transparent clamp(1px, 0.51vw, 2px) clamp(13px, 4.62vw, 27px)),
+        repeating-linear-gradient(-45deg, rgba(0,108,53,.05) 0 clamp(1px, 0.51vw, 2px), transparent clamp(1px, 0.51vw, 2px) clamp(13px, 4.62vw, 27px));
+      mix-blend-mode:screen; opacity:.7;
+      mask-image:radial-gradient(70% 50% at 50% 50%, #000 60%, transparent 100%);
+    }
+    .hex-grid{
+      position:absolute; inset:0; opacity:.18; pointer-events:none;
+      background:
+        radial-gradient(circle at 50% 50%, rgba(0,108,53,.22), transparent 55%),
+        url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="220" height="190" viewBox="0 0 220 190"> <defs><pattern id="hex" width="38" height="33" patternUnits="userSpaceOnUse" patternTransform="translate(0,0)"> <path d="M19 1 L37 10 L37 23 L19 32 L1 23 L1 10 Z" fill="none" stroke="%23b6f3cd" stroke-width="0.6" opacity="0.5"/></pattern></defs> <rect width="100%" height="100%" fill="url(%23hex)"/></svg>');
+      background-size:cover;
+      filter:blur(clamp(1px, 0.51vw, 2px));
+    }
+    #tpcode {
+      white-space: pre;
+      border-left: 3px solid #00ffcc;
+      padding-left: 10px;
+      animation: blink 1s step-end infinite;
+    }
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+    .code-rain{
+      position:absolute; inset:0; pointer-events:none; opacity:.24;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      color:#b6f3cd; line-height:1.2; font-size:clamp(10px, 3.59vw, 21px);
+      display:grid; grid-template-columns:repeat(44, 1fr);
+      gap:clamp(3px, 1.03vw, 6px); padding:clamp(13px, 4.62vw, 27px);
+      mask-image:linear-gradient(to bottom, transparent, #000 18%, #000 82%, transparent);
+    }
+    .code-rain span{
+      display:block; white-space:nowrap; animation:fall 6s linear infinite;
+    }
+    .code-rain span:nth-child(odd){animation-duration:7.5s}
+    .code-rain span:nth-child(3n){animation-duration:5.8s}
+    @keyframes fall{
+      from{transform:translateY(-120%); opacity:.2}
+      to{transform:translateY(120%); opacity:1}
+    }
+    .saudi-stripe{
+      position:absolute; left:0; right:0; top:-clamp(22px, 7.69vw, 44px); height:clamp(105px, 35.90vw, 210px); pointer-events:none;
+      background: linear-gradient(100deg, transparent 0 20%, rgba(0,108,53,.35) 30%, rgba(0,108,53,.15) 65%, transparent 80%);
+      filter: blur(clamp(4px, 1.54vw, 9px));
+      transform: skewY(-2deg);
+    }
+    .note{font-size:clamp(9px, 3.33vw, 19px); color:#8aa39a; margin-top:clamp(4px, 1.54vw, 9px)}
+    .contact form{display:grid; gap:clamp(7px, 2.56vw, 14px)}
+    input, textarea{
+      background:#0f1418; color:var(--text); border:clamp(1px, 0.26vw, 1px) solid rgba(255,255,255,.08);
+      padding:clamp(9px, 3.08vw, 18px) clamp(10px, 3.59vw, 21px); border-radius:clamp(7px, 2.56vw, 14px); outline:none;
+    }
+    input:focus, textarea:focus{border-color:var(--accent); box-shadow:0 0 0 clamp(2px, 0.77vw, 4px) var(--ring)}
+    footer{padding:clamp(25px, 8.72vw, 51px) 0 clamp(44px, 15.38vw, 89px); color:var(--muted)}
+    .socials{display:flex; gap:clamp(7px, 2.56vw, 14px); flex-wrap:wrap}
+    .pill{display:inline-flex; gap:clamp(5px, 2.05vw, 11px); align-items:center; padding:clamp(5px, 2.05vw, 11px) clamp(9px, 3.08vw, 18px); border-radius:clamp(749px, 256.15vw, 1498px); border:clamp(1px, 0.26vw, 1px) solid rgba(255,255,255,.08); background:rgba(255,255,255,.03)}
+.socials .pill a[href^="mailto:"] { color:inherit !important }  
+a, a:link, a:visited, a:hover, a:active, 
+.btn, .pill, .pill-link,pill a, .links a, button {
+  text-decoration: none !important;
+  border-bottom: 0 !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+.socials .pill { color:#a9b0b7 !important; border:clamp(1px, 0.26vw, 1px) solid rgba(255,255,255,.12) }
+.socials .pill a { color:inherit !important; text-decoration:none !important }
+/* Laptop/Desktop adjustments */
+@media (min-width: 1024px) {
+  .mark {
+    width: 80px !important;
+    height: 70px !important;
+  }
+  .btn {
+    padding: 12px 20px !important;
+    font-size: 16px !important;
+  }
+  .title {
+    font-size: 40px !important;
+  }
+  .subtitle {
+    font-size: 18px !important;
+  }
+  .card {
+    padding: 24px !important;
+  }
+}
+/* card sizes */
+.card {
+  padding: clamp(14px, 2vw, 24px) !important;
+  border-radius: clamp(10px, 1.5vw, 16px) !important;
+}
+/* Responsive projects grid */
+.projects {
+  display: grid !important;
+  gap: 16px !important;
+  margin: 0 auto !important;
+}
+@media (max-width: 640px) {
+  .projects { grid-template-columns: 1fr !important; }
+}
+@media (min-width: 641px) and (max-width: 1023px) {
+  .projects { grid-template-columns: repeat(2, 1fr) !important; }
+}
+@media (min-width: 1024px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr) !important;
+    max-width: 1200px !important;
+  }
+}
+.links {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  justify-content: space-between !important;
+  gap: 8px !important;
+}
+.links .btn {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  font-size: clamp(12px, 2.5vw, 14px) !important;
+  padding: clamp(8px, 2vw, 12px) !important;
+}
+/* Skills section cards adjustments */
+.skills .card {
+  padding: clamp(18px, 2.5vw, 28px) !important;
+  min-height: 180px !important;
+}
+@media (min-width: 1024px) {
+  .skills .card {
+    padding: 24px 28px !important;
+    font-size: 16px !important;
+  }
+}
+/* Projects grid adjustments */
+.projects {
+  display: grid !important;
+  gap: 16px !important;
+  margin: 0 auto !important;
+}
+@media (max-width: 640px) {
+  .projects { grid-template-columns: 1fr !important; }
+}
+@media (min-width: 641px) and (max-width: 1023px) {
+  .projects { grid-template-columns: repeat(2, 1fr) !important; }
+}
+@media (min-width: 1024px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr) !important;
+    max-width: 1200px !important;
+  }
+}
+/* Skills Section Responsive */
+.skills {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+  gap: 20px !important;
+}
+@media (min-width: 1024px) {
+  .skills {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .skills {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+.skills .card {
+  padding: 28px !important;
+  font-size: 16px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+/* Logo */
+header .mark {
+  flex: none !important;
+  width: 60px !important;
+  height: 60px !important;
+  margin-inline-end: 12px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+header .mark img, header .mark svg {
+  width: 70% !important;
+  height: auto !important;
+  display: block !important;
+}
+/* تكبير اللوقو للشاشات الكبيرة  */
+@media (min-width: 1024px) {
+  header .mark {
+    width: 110px !important;
+    height: 110px !important;
+  }
+  header .mark img,
+  header .mark svg {
+    width: 75% !important;
+    height: auto !important;
+  }
+}
+.tools {
+  display: grid;
+  gap: clamp(16px, 3vw, 24px);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: clamp(25px, 6vw, 40px);
+}
+.tool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  overflow: hidden;
+  text-align: center;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.tool:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,108,53,.25);
+}
+.tool-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: clamp(8px, 1.5vw, 12px);
+  border: 1px solid rgba(255,255,255,.06);
+  background: #0f1418;
+  margin-bottom: clamp(10px, 2vw, 14px);
+}
+.tool-body {
+  padding: 0 clamp(10px, 3vw, 18px) clamp(10px, 3vw, 18px);
+}
+.tool-body .section-title {
+  font-size: clamp(15px, 1.8vw, 18px);
+  color: var(--accent-2);
+  margin-bottom: clamp(4px, 1vw, 8px);
+}
+.tool-body p {
+  color: var(--muted);
+  font-size: clamp(13px, 1.5vw, 15px);
+  line-height: 1.7;
+}
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.9;
+}
+.skill-list li {
+  margin-bottom: 14px;
+  font-weight: 600;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.percent {
+  color: var(--accent-2);
+  font-weight: 800;
+  margin-right: 6px;
+}
+.bar {
+  height: 8px;
+  background: #0f1418;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.fill {
+  height: 100%;
+  width: 0%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--accent-2), var(--accent));
+  transition: width 1.2s ease-out;
+}
+/* Skills Section Responsive – تعديل توزيع الكروت */
+#skills {
+  display: grid !important;
+  gap: 20px !important;
+}
+/* كمبيوتر (3 كروت في الصف) */
+@media (min-width: 1024px) {
+  #skills {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+/* تابلت (2 كارد في الصف) */
+@media (min-width: 641px) and (max-width: 1023px) {
+  #skills {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+/* جوال (كارد واحد في الصف) */
+@media (max-width: 640px) {
+  #skills {
+    grid-template-columns: 1fr !important;
+  }
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <span class="mark" aria-hidden="true"><img src="images/Saudi_tech-logo.png" alt="Logo" style="width:clamp(47px, 16.41vw, 95px);height:clamp(47px, 16.41vw, 95px);"></span>
+        <span>ملفي الشخصي</span>
+      </div>
+      <nav class="links">
+        <a href="#projects" class="btn">مشاريع</a>
+        <a href="index.html" class="btn primary">الصفحة الرئيسية</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="grid cols-2" style="padding-top:clamp(44px, 15.38vw, 89px)">
+      <div>
+        <h1 class="title">مرحبًا، أنا <span style="color:var(--accent-2)" class="h">ريان . </span> <span class="badge">🇸🇦</span>   </h1><br>
+        
+        <p class="subtitle">
+
+          مبرمج ومطور سعودي يتميّز بفهم عميق لاحتياجات المستخدمين، وتحويل الأفكار إلى حلول تقنية متكاملة تجمع بين الكفاءة والبساطة. أعمل على تصميم وتطوير أدوات، تطبيقات، وأنظمة ذكية تُحسّن الأداء وتثري تجربة المستخدم بأسلوب مبتكر واحترافي. أؤمن بأن الإبداع في البرمجة لا يقتصر على كتابة الكود، بل في القدرة على بناء حلول تُحدث أثرًا ملموسًا وتضيف قيمة حقيقية في عالم التقنية.
+أمتلك خبرة عملية واسعة من خلال أكثر من 75 مشروعًا منشورًا على GitHub تتنوّع بين أدوات تقنية، تطبيقات ذكية، أدوات تعليمية، ومواقع ويب متكاملة.
+
+        </p>
+        <div class="hero-cta">
+          <a class="btn primary" href="https://github.com/Filza2?tab=repositories">استعرض أعمالي</a>
+          <a class="btn" href="#contact">تواصل معي</a>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="creative-wrap">
+      <div class="saudi-stripe"></div>
+      <div class="arabesque"></div>
+      <div class="hex-grid"></div>
+      <div class="code-rain" aria-hidden="true">
+<span>open('ملاحظة.txt','w',encoding='utf-8').write('# ياهلا ومرحبا')</span>
+<span>open('ملاحظة.txt','w',encoding='utf-8').write('# يالله حييييهم')</span>
+<span>for i,v in enumerate(['مبرمج','سعودي',' من بلد العز المملكة العربية السعودية']): print(i,v)</span>
+<span>print("وش حالكم عساكم بخير")</span>
+<span>console.log("أهلا بكم في الاجواء السعودية")</span>
+<span>Console.WriteLine("ريان ");</span>
+<span>System.out.println("966");</span>
+<span><?php echo "KSA - SA\n";echo "Welcome to\n";?></span>
+<span>echo "Hello World"<span>
+<span>#include <iostream> int main() {std:: cout <<"Rayan Alshehri"<< std::endl;</span>
+<span><sa><span class="badge">🇸🇦 </span></sa></span>
+<span>from datetime import datetime as dt\nts=dt.now().isoformat()</span>
+<span>lambda_handler=lambda e,c: {'statusCode':200}</span>
+<span>import math\nround(math.pi, 3)</span>
+<span>def chunk(xs,n): return [xs[i:i+n] for i in range(0,len(xs),n)]</span>
+<span>if __name__=='__main__': print('run')</span>
+<span>open('ملاحظة.txt','w',encoding='utf-8').write('# ياهلا ومرحبا')</span>
+<span>open('ملاحظة.txt','w',encoding='utf-8').write('# يالله حييييهم')</span>
+<span>for i,v in enumerate(['مبرمج','سعودي',' من بلد العز المملكة العربية السعودية']): print(i,v)</span>
+<span>print("وش حالكم عساكم بخير")</span>
+<span>console.log("أهلا بكم في الاجواء السعودية")</span>
+<span>Console.WriteLine("ريان ");</span>
+<span>System.out.println("966");</span>
+<span><?php echo "KSA - SA\n";echo "Welcome to\n";?></span>
+<span>echo "Hello World"<span>
+<span>#include <iostream> int main() {std:: cout <<"Rayan"<< std::endl;</span>
+<span><sa><span class="badge">🇸🇦 </span></sa></span>
+<span>from datetime import datetime as dt\nts=dt.now().isoformat()</span>
+<span>lambda_handler=lambda e,c: {'statusCode':200}</span>
+<span>import math\nround(math.pi, 3)</span>
+<span>def chunk(xs,n): return [xs[i:i+n] for i in range(0,len(xs),n)]</span>
+<span>if __name__=='__main__': print('run')</span>
+<span>open('ملاحظة.txt','w',encoding='utf-8').write('# ياهلا ومرحبا')</span>
+<span>open('ملاحظة.txt','w',encoding='utf-8').write('# يالله حييييهم')</span>
+<span>for i,v in enumerate(['مبرمج','سعودي',' من بلد العز المملكة العربية السعودية']): print(i,v)</span>
+<span>print("وش حالكم عساكم بخير")</span>
+<span>console.log("أهلا بكم في الاجواء السعودية")</span>
+<span>Console.WriteLine("ريان ");</span>
+<span>System.out.println("966");</span>
+<span><?php echo "KSA - SA\n";echo "Welcome to\n";?></span>
+<span>echo "Hello World"<span>
+<span>#include <iostream> int main() {std:: cout <<"Rayan"<< std::endl;</span>
+<span><sa><span class="badge">🇸🇦 </span></sa></span>
+<span>from datetime import datetime as dt\nts=dt.now().isoformat()</span>
+<span>lambda_handler=lambda e,c: {'statusCode':200}</span>
+<span>import math\nround(math.pi, 3)</span>
+<span>def chunk(xs,n): return [xs[i:i+n] for i in range(0,len(xs),n)]</span>
+<span>if __name__=='__main__': print('run')</span>
+<span>open('ملاحظة.txt','w',encoding='utf-8').write('# ياهلا ومرحبا')</span>
+<span>open('ملاحظة.txt','w',encoding='utf-8').write('# يالله حييييهم')</span>
+<span>for i,v in enumerate(['مبرمج','سعودي',' من بلد العز المملكة العربية السعودية']): print(i,v)</span>
+<span>print("وش حالكم عساكم بخير")</span>
+<span>console.log("أهلا بكم في الاجواء السعودية")</span>
+<span>Console.WriteLine("ريان ");</span>
+<span>System.out.println("966");</span>
+<span><?php echo "KSA - SA\n";echo "Welcome to\n";?></span>
+<span>echo "Hello World"<span>
+<span>#include <iostream> int main() {std:: cout <<"Rayan"<< std::endl;</span>
+<span><sa><span class="badge">🇸🇦 </span></sa></span>
+<span>from datetime import datetime as dt\nts=dt.now().isoformat()</span>
+<span>lambda_handler=lambda e,c: {'statusCode':200}</span>
+<span>import math\nround(math.pi, 3)</span>
+<span>def chunk(xs,n): return [xs[i:i+n] for i in range(0,len(xs),n)]</span>
+<span>if __name__=='__main__': print('run')</span>
+<span>open('ملاحظة.txt','w',encoding='utf-8').write('# ياهلا ومرحبا')</span>
+<span>open('ملاحظة.txt','w',encoding='utf-8').write('# يالله حييييهم')</span>
+<span>for i,v in enumerate(['مبرمج','سعودي',' من بلد العز المملكة العربية السعودية']): print(i,v)</span>
+<span>print("وش حالكم عساكم بخير")</span>
+<span>console.log("أهلا بكم في الاجواء السعودية")</span>
+<span>Console.WriteLine("ريان ");</span>
+<span>System.out.println("966");</span>
+<span><?php echo "KSA - SA\n";echo "Welcome to\n";?></span>
+<span>echo "Hello World"<span>
+<span>#include <iostream> int main() {std:: cout <<"Rayan"<< std::endl;</span>
+<span><sa><span class="badge">🇸🇦 </span></sa></span>
+<span>from datetime import datetime as dt\nts=dt.now().isoformat()</span>
+<span>lambda_handler=lambda e,c: {'statusCode':200}</span>
+<span>import math\nround(math.pi, 3)</span>
+<span>def chunk(xs,n): return [xs[i:i+n] for i in range(0,len(xs),n)]</span>
+<span>if __name__=='__main__': print('run')</span>
+
+</div>
+
+
+
+    <div class="container" style="position:relative; z-index:2; padding:clamp(25px, 8.72vw, 51px) 0 clamp(7px, 2.56vw, 14px)">
+        <section id="about" class="grid cols-2" style="margin:0">
+
+          <div class="card" id="tpcode" dir="ltr">
+            <ul style="margin:clamp(5px, 2.05vw, 11px) 0 0">
+            </ul>
+          </div>
+        </section>  
+
+        
+    
+<section id="skills" class="grid cols-3">
+  <div class="card">
+    <h3 class="section-title">البرمجة والتطوير</h3>
+    <ul class="skill-list">
+      <li>Python<span class="percent">100%</span><div class="bar"><div class="fill" data-width="100"></div></div></li>
+      <li>HTML<span class="percent">85%</span><div class="bar"><div class="fill" data-width="85"></div></div></li>
+      <li>CSS<span class="percent">80%</span><div class="bar"><div class="fill" data-width="80"></div></div></li>
+      <li>JavaScript/TypeScript/Node.js<span class="percent">40%</span><div class="bar"><div class="fill" data-width="40"></div></div></li>
+      <li>C++<span class="percent">35%</span><div class="bar"><div class="fill" data-width="35"></div></div></li>
+      <li>PHP<span class="percent">30%</span><div class="bar"><div class="fill" data-width="30"></div></div></li>
+      <li>Rust<span class="percent">25%</span><div class="bar"><div class="fill" data-width="25"></div></div></li>
+      <li>Shell<span class="percent">20%</span><div class="bar"><div class="fill" data-width="20"></div></div></li>
+    </ul>
+  </div>
+
+
+  <div class="card">
+    <h3 class="section-title">أبرز الشهادات</h3>
+    <ul class="skill-list">
+      <li>Project Managment<span class="percent">100%</span><div class="bar"><div class="fill" data-width="100"></div></div></li>
+      <li>Train-The-Trainer<span class="percent">99%</span><div class="bar"><div class="fill" data-width="99"></div></div></li>
+      <li>The Manager's Essential Toolkit<span class="percent">98%</span><div class="bar"><div class="fill" data-width="98"></div></div></li>
+      <li>Digital Marketing(SEO,Analytics and Online Presence)<span class="percent">97%</span><div class="bar"><div class="fill" data-width="97"></div></div></li>
+      <li>The Art of Selling<span class="percent">96%</span><div class="bar"><div class="fill" data-width="96"></div></div></li>
+      <li>IoT and Digital Transformation<span class="percent">95%</span><div class="bar"><div class="fill" data-width="95"></div></div></li>
+      <li>Accounting for Non-Accountants<span class="percent">94%</span><div class="bar"><div class="fill" data-width="94"></div></div></li>
+      <li>Success Skills and Self-improvement<span class="percent">93%</span><div class="bar"><div class="fill" data-width="93"></div></div></li>
+    </ul>
+  </div>
+
+
+  <div class="card">
+    <h3 class="section-title">بعض الشهادات الآخرى</h3>
+    <ul class="skill-list">
+      <li>Cyber Security<span class="percent">100%</span><div class="bar"><div class="fill" data-width="100"></div></div></li>
+      <li>Artificial Intelligence Concepts and Advanced Applications<span class="percent">99%</span><div class="bar"><div class="fill" data-width="99"></div></div></li>
+      <li>Networks Basics<span class="percent">98%</span><div class="bar"><div class="fill" data-width="98"></div></div></li>
+      <li>Data Science<span class="percent">97%</span><div class="bar"><div class="fill" data-width="97"></div></div></li>
+      <li>Operating Systems Basics<span class="percent">96%</span><div class="bar"><div class="fill" data-width="96"></div></div></li>
+      <li>Computer Hardware Basics<span class="percent">95%</span><div class="bar"><div class="fill" data-width="95"></div></div></li>
+      <li>Power Bi<span class="percent">94%</span><div class="bar"><div class="fill" data-width="94"></div></div></li>
+      <li>Digital analysis<span class="percent">93%</span><div class="bar"><div class="fill" data-width="93"></div></div></li>
+    </ul>
+  </div>
+
+  
+  <div class="card">
+    <h3 class="section-title">المهارات/الدورات التدريبية</h3>
+    <ul class="skill-list">
+      <li>Problem Solving & Decision Making<span class="percent">94%</span><div class="bar"><div class="fill" data-width="94"></div></div></li>
+      <li>Introduction to Human Resource Managment<span class="percent">96%</span><div class="bar"><div class="fill" data-width="96"></div></div></li>
+      <li>Accounting and Financial Managment<span class="percent">98%</span><div class="bar"><div class="fill" data-width="99"></div></div></li>
+      <li>Developing Digital Arabic Content<span class="percent">95%</span><div class="bar"><div class="fill" data-width="95"></div></div></li>
+      <li>Public Speaking Skills<span class="percent">94%</span><div class="bar"><div class="fill" data-width="94"></div></div></li>
+    </ul>
+  </div>
+  
+
+  <div class="card">
+    <h3 class="section-title">اللغات</h3>
+    <ul class="skill-list">
+      <li>العربية<span class="percent">100%</span><div class="bar"><div class="fill" data-width="100"></div></div></li>
+      <li>English<span class="percent">95%</span><div class="bar"><div class="fill" data-width="95"></div></div></li>
+    </ul>
+  </div>
+
+
+
+
+</section>
+      </div>
+    </section>
+
+
+<br><br><br><br><h1>من أبرز الأدوات المختارة</h1>
+<section id="tools" class="tools grid">
+  <div class="card tool" id="projects">
+    <a href="https://github.com/Filza2/CMS"><img src="/images/tools/CMS.PNG" alt="CMS" class="tool-img"></a>
+    <div class="tool-body">
+      <a href="https://github.com/Filza2/CMS"><h3 class="section-title"> Customers management system CMS </h3></a>
+      <p class="muted">نظام إدارة عملاء بسيط وسهل الاستخدام. يتيح لك حفظ وعرض بيانات العملاء وإدارة القوائم بسرعة—مناسب للأعمال الصغيرة ويعمل محليًا أو عبر واجهة ويب.</p>
+    </div>
+  </div>
+
+  <div class="card tool">
+    <a href="https://github.com/Filza2/CVD23"><img src="/images/tools/CVD23.jpg" alt="CVD23" class="tool-img"></a>
+    <div class="tool-body">
+      <a href="https://github.com/Filza2/CVD23"><h3 class="section-title"> Covid 2023 (CVD23) </h3></a>
+      <p class="muted">محاكاة تعليمية لأدوات التحكم عن بُعد مخصّصة للاختبارات الأمنية داخل بيئات معزولة ومع موافقة المستخدم. مخصصة لأغراض التدريب والبحث فقط — لا تستخدمها على أجهزة أو بيانات دون تصريح صريح.</p>
+    </div>
+  </div>
+
+  <div class="card tool">
+    <a href="https://github.com/Filza2/Proxy-Scraper"><img src="/images/tools/Proxy_Scraper.png" alt="Proxy-Scraper" class="tool-img"></a>
+    <div class="tool-body">
+      <a href="https://github.com/Filza2/Proxy-Scraper"><h3 class="section-title"> Proxy-Scraper </h3></a>
+      <p class="muted">أداة لجمع قوائم البروكسي من مصادر مختلفة وترتيبها تلقائيًا. مفيدة للباحثين واختبارات الأداء؛ استخدمها بصورة قانونية ومع مراعاة شروط المواقع.</p>
+    </div>
+  </div>
+
+  <div class="card tool">
+    <a href="https://github.com/Filza2/DBreaker"><img src="/images/tools/DBreaker.jpg" alt="DBreaker" class="tool-img"></a>
+    <div class="tool-body">
+      <a href="https://github.com/Filza2/DBreaker"><h3 class="section-title"> DBreaker </h3></a>
+      <p class="muted">اداه استخراج معلومات المتصفحات المخزنه على جهاز كمبيوتر محلي, مخصّصة للاستخدام المصرّح به (استرجاع شخصي أو فحص أمني).</p>
+    </div>
+  </div>
+</section>
+
+
+
+    <section id="contact" class="grid cols-2">
+      <div class="card">
+        <h3 class="section-title"> الشهادات والدورات التدريبية </h3>
+        <ul>
+          <li>حصلت على أكثر من خمسين شهادة ودورة تدريبية في مجالات متعددة تشمل الأمن السيبراني، الذكاء الاصطناعي، تحليل البيانات، تطوير الذات، والأعمال والإدارة. أواصل تطوير خبراتي التقنية والعملية باستمرار لمواكبة أحدث الابتكارات والتقنيات الحديثة في مجالات البرمجة والتحول الرقمي، وتنمية قدراتي الشخصية والمهنية.</li>
+        </ul>
+      </div></section>
+
+
+    
+    <footer>
+      <div class="container">
+        <div class="socials">
+          <a href="https://github.com/Filza2" target="_blank" rel="noopener" style="color:inherit"><span class="pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="10" opacity=".25"/><circle cx="9" cy="10" r="1.5"/><circle cx="15" cy="10" r="1.5"/><path d="M7 16c2 1.5 8 1.5 10 0" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>GitHub</span></a>
+          <!--href="https://www.linkedin.com/"--><a href="https://filza2.github.io/linkedin" target="_blank" rel="noopener" style="color:inherit"><span class="pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3" opacity=".25"/><rect x="6" y="10" width="3" height="8"/><rect x="6" y="6" width="3" height="3"/><rect x="11" y="10" width="3" height="8"/><rect x="14" y="10" width="4" height="3" opacity=".8"/></svg>Linkedin</span></a>
+          <!-- <a href="mailto:me@me.com" target="_blank" rel="noopener" style="color:inherit"><span class="pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" opacity=".25"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>Email</span></a>-->
+          <a href="https://filza2.github.io/" target="_blank" rel="noopener" style="color:inherit"><span class="pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm-1 15H8a8 8 0 018-8v3a5 5 0 00-5 5z"/></svg>Website</span></a>
+</div>
+</div>
+</footer>
+
+</main>
+
+
+<script>
+  const codeText=`
+echo "Hello World" 
+System.out.println("+966");
+console.log("أهلا بكم في الاجواء السعودية")
+<span class="badge">🇸🇦 </span>
+print("ياهلا يالله حيييهم")
+Console.WriteLine("CTRL+S");`;
+  let i=0;
+  const speed=50; 
+  function typeCode() {
+    if (i < codeText.length) {
+      document.getElementById("tpcode").textContent += codeText.charAt(i);
+      i++;
+      setTimeout(typeCode, speed);
+    }
+  }typeCode();
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.querySelectorAll(".fill").forEach(bar => {
+        const width = bar.getAttribute("data-width");
+        bar.style.width = width + "%";
+      });
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.25 });
+
+document.querySelectorAll("#skills .card").forEach(card => observer.observe(card));
+</script>
+</body>
+</html>
